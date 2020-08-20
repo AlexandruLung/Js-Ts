@@ -1,8 +1,6 @@
-import fetch from "node-fetch";
+import fetch from'node-fetch'
 
-
-const url = "https://localhost:8080/sum/1/2";
-
-fetch(url)
+const sumURL="https://localhost:8080.dog/woof.json"
+fetch(sumURL)
   .then((body) => body.json())
   .then((json) => console.log("Sum: " + json));
